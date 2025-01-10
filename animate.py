@@ -42,7 +42,7 @@ def load_mixamo_smpl(actions_dir, action_type='0007', skip=1):
     return params
 
 
-def too3dmesh(vertx, triangles, colors=None):
+def too3dmesh(vertx, triangles, colors):
     verts_posed_o3d = o3d.utility.Vector3dVector(vertx.detach().cpu().numpy())
     faces_o3d = o3d.utility.Vector3iVector(triangles.detach().cpu().numpy())
     mesh_o3d = o3d.geometry.TriangleMesh()
