@@ -8,7 +8,7 @@ defaults:
 training:
   headless : True
 inference:
-  create_mesh : False
+  create_mesh : True
 hydra:
   job:
     chdir: true
